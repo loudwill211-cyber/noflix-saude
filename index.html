@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoFlix Saúde - Seu guia de saúde e bem-estar</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8fdf8; color: #1a1a1a; }
+
+    header {
+      background: linear-gradient(135deg, #cc0000, #880000);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo { font-size: 22px; font-weight: 800; color: #fff; letter-spacing: 1px; }
+    .logo span { color: #ffaaaa; }
+    nav a { color: #fff; text-decoration: none; margin-left: 16px; font-size: 14px; opacity: 0.85; }
+
+    .hero {
+      background: linear-gradient(160deg, #cc0000 0%, #880000 50%, #1a0000 100%);
+      color: #fff;
+      padding: 60px 24px;
+      text-align: center;
+    }
+    .hero-icon {
+      width: 100px; height: 100px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 28px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 52px;
+      margin: 0 auto 24px;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+    .hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 12px; }
+    .hero h1 span { color: #ffaaaa; }
+    .hero p { font-size: 16px; color: rgba(255,255,255,0.8); max-width: 500px; margin: 0 auto 32px; line-height: 1.6; }
+    .btn {
+      display: inline-block;
+      background: #fff;
+      color: #cc0000;
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      transition: transform 0.2s;
+    }
+    .btn:hover { transform: scale(1.05); }
+
+    .features {
+      padding: 60px 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .features h2 { text-align: center; font-size: 26px; margin-bottom: 8px; color: #cc0000; }
+    .features .sub { text-align: center; color: #888; margin-bottom: 40px; font-size: 15px; }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .feature-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 28px 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      border: 1px solid #f0f0f0;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+    .feature-icon { font-size: 40px; margin-bottom: 16px; }
+    .feature-card h3 { font-size: 17px; margin-bottom: 8px; color: #1a1a1a; }
+    .feature-card p { font-size: 14px; color: #888; line-height: 1.6; }
+
+    .download {
+      background: linear-gradient(135deg, #1a0000, #cc0000);
+      color: #fff;
+      padding: 60px 24px;
+      text-align: center;
+    }
+    .download h2 { font-size: 28px; margin-bottom: 12px; }
+    .download p { color: rgba(255,255,255,0.8); margin-bottom: 28px; }
+    .store-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      color: #1a1a1a;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    footer {
+      background: #1a0000;
+      color: #888;
+      padding: 24px;
+      text-align: center;
+      font-size: 13px;
+    }
+    footer a { color: #cc0000; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">NoFlix <span>Saúde</span></div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-icon">❤️</div>
+  <h1>NoFlix <span>Saúde</span></h1>
+  <p>Seu guia completo de saúde e bem-estar. Calcule seu IMC, acompanhe sua saúde e viva melhor.</p>
+  <a href="https://play.google.com/store/apps/details?id=com.sobuj.bmicalculator" class="btn">📱 Baixar no Google Play</a>
+</div>
+
+<section class="features">
+  <h2>Funcionalidades</h2>
+  <p class="sub">Tudo que você precisa para cuidar da sua saúde</p>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <div class="feature-icon">⚖️</div>
+      <h3>Calculadora de IMC</h3>
+      <p>Calcule seu Índice de Massa Corporal de forma rápida e precisa.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <h3>Classificação</h3>
+      <p>Saiba se você está abaixo do peso, normal, acima do peso ou obeso.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <h3>Fácil de usar</h3>
+      <p>Interface simples e intuitiva para calcular seu IMC em segundos.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🆓</div>
+      <h3>Gratuito</h3>
+      <p>Totalmente gratuito disponível no Google Play Store.</p>
+    </div>
+  </div>
+</section>
+
+<div class="download">
+  <h2>Baixe agora gratuitamente</h2>
+  <p>Disponível para Android no Google Play</p>
+  <a href="https://play.google.com/store/apps/details?id=com.sobuj.bmicalculator" class="store-btn">
+    ▶ Google Play
+  </a>
+</div>
+
+<footer>
+  <p>© 2026 NoFlix Saúde · <a href="privacy.html">Política de Privacidade</a></p>
+</footer>
+
+</body>
+</html>
